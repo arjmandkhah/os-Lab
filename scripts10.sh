@@ -1,12 +1,12 @@
+
+
 #!/bin/bash
-echo this is script number 10
 check_sign() {
-    if [ "$1" -gt 0]; then 
-            echo "Positive"
+    if [ "$1" -ge 0 ]; then
+        echo "Positive"
     else
-            echo "Negative"
+        echo "Negative"
     fi
 }
-
-read num
+read -p "Enter a number: " num
 check_sign "$num"
